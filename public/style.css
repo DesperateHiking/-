@@ -1,5 +1,129 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
-    //font-family: 'Roboto', sans-serif;
-    background-color: rosybrown;
+/ / font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    line-height: 1;
+    font-size: 18pt;
+    color: black;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+section {
+    padding: 106px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1279px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 700px;
+
+    background: url("images/top_background.png") right top no-repeat;
+}
+
+.intro__inner {
+    max-width: 658px;
+    padding: 0 60px;
+    text-align: left;
+    box-sizing: unset;
+}
+
+.intro__title {
+    max-width: 550px;
+    font-family: "Roboto Black", sans-serif;
+    font-weight: 700;
+    font-size: 36pt;
+    line-height: 1.2;
+    padding: 25px 0;
+}
+
+.intro__text {
+    max-width: 658px;
+    font-family: Roboto, sans-serif;
+    font-size: 14pt;
+    line-height: 2;
+    padding: 25px 0;
+}
+
+.intro__btn {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: black;
+
+    font-size: 10pt;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 28px;
+    background-color: #f5eb05;
+}
+
+.intro__btn:hover {
+    color: #484848;
+}
+
+/* Header*/
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__top {
+    margin-top: 45px;
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    width: 90%;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 10%;
+}
+
+.nav__link {
+    height: min-content;
+    margin: 0 12px;
+    font-family: "Roboto Light", sans-serif;
+    color: black;
+    text-decoration: none;
+    transition: color 50ms linear;
+}
+
+.nav__link:hover {
+    color: #7e7e7e;
+}
+
+.first__section h3 {
+    font-weight: 300;
+    font-size: 1.6em;
+
+    border-left: #0076a7 solid 10px;
+    padding: 15px 0 15px 24px;
+
 }
