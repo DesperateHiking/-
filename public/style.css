@@ -539,7 +539,12 @@ section {
 }
 
 .email {
+    font-weight: 700;
     color: black;
+}
+
+.phone__num{
+    font-weight: 700;
 }
 
 .vertical__line {
@@ -691,9 +696,106 @@ font-size: 0.9em;
     background-color: #f5eb05;
 }
 
+.question__buttons__block{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.question__button{
+    display: flex;
+    flex-flow: column;
+    width: 49.2%;
+    border: #8b8b8b 2px solid;
+    text-decoration: none;
+    color: black;
+
+    transition: box-shadow 80ms linear;
+}
+
+.question__button__info .email{
+    text-decoration: underline;
+}
+
+.question__button:hover .question__button__info{
+    color: #048cf5;
+}
+
+.question__button:hover .question__button__info .email{
+    color: #048cf5;
+}
+
+.question__button:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.question__button__info{
+    text-align: left;
+    color: black;
+    padding: 30px 5px 30px 100px;
+}
+
+.question__button__title{
+    text-decoration: none;
+ margin-bottom: 10px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: black;
+    margin-top: 38px;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 20px 10px 50px;
+    justify-content: space-between;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 0.7em;
 
 
+    color: #bdc5cb;
+}
 
+.footer__logo{
+    margin-bottom: 20px;
+}
+
+.footer__text{
+
+    margin: 15px 0;
+}
+
+.footer__link{
+    color: #bdc5cb;
+
+}
+
+.--first{
+width: 40%;
+}
+
+.--second{
+    width: 20%;
+    padding-top: 10px;
+
+}
+
+.--third{
+    width: 25%;
+    padding-top: 80px;
+    line-height: 1.2;
+}
+
+wh{
+    color: white;
+}
 
 
 
