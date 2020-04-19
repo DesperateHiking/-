@@ -1,0 +1,125 @@
+@import "basicSettings";
+@import "fonts";
+@import "Colors/enipSectionColors";
+
+.enip__section {
+  padding-top: 62px;
+  padding-bottom: 90px;
+  margin-top: 206px;
+  background: url($image_dir + "section2_back.png") top no-repeat;
+}
+
+.enip__header {
+  font-family: $enip_header_font, sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  color: white;
+  text-transform: uppercase;
+
+  padding: 2px 24px;
+  margin: 0 0 29px 0;
+
+  border-left: $thick_line_color solid 7px;
+}
+
+.enip__products__header {
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin: 35px 0 70px;
+}
+
+.enip__section__info {
+  font-weight: 300;
+  color: white;
+
+  margin: 15px 0;
+  font-size: .75em;
+  text-transform: none;
+  line-height: 1.4;
+}
+
+.--about {
+  padding: 0 39px;
+}
+
+.product__list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $border_color;
+}
+
+.product__item {
+  display: flex;
+  flex-wrap: nowrap;
+  border-top: 1px solid $border_color;
+  background-color: white;
+}
+
+.product__img {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 394px;
+}
+
+.product__item__info {
+  display: flex;
+  flex-direction: column;
+  width: 657px;
+  font-size: 0.7em;
+
+  border-left: $border_color 1px solid;
+
+  padding: 33px 0 0 40px;
+}
+
+.product__title__link {
+  height: min-content;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: color 80ms linear;
+}
+
+.product__title__link:hover {
+  color: $link_color;
+}
+
+.product__versions {
+  margin: 26px 15px 32px 0;
+  padding-left: 0;
+  line-height: 1.2;
+}
+
+.product__price {
+  width: 230px;
+  background-color: $product_price_background_color;
+  border-left: $border_color 1px solid;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+
+  color: black;
+  font-family: $price_font, sans-serif;
+  font-weight: 700;
+}
+
+.price sub {
+  display: flex;
+  align-items: flex-end;
+
+  color: black;
+  font-family: $price_sub_font, sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+
+  margin-left: 4px;
+}

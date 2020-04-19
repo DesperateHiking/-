@@ -1,0 +1,80 @@
+@import "basicSettings";
+@import "fonts";
+@import "Colors/accesoriesSectionColors";
+
+.accessory__section {
+  margin-top: 0;
+}
+
+.accessory__header {
+  font-weight: 300;
+  text-align: center;
+}
+
+.accessory__header::before {
+  content: " ";
+  display: block;
+  width: 97px;
+  height: 7px;
+  margin: 0 auto 25px;
+  background-color: $thick_line_color;
+}
+
+.accessories__list {
+  font-family: $accessories_list_font, sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+  list-style: none;
+
+  margin-bottom: 34px;
+  padding-left: 0;
+}
+
+.accessory__title {
+  font-family: $accessories_title_font, sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  margin-top: 68px;
+  margin-bottom: -26px;
+  padding-left: 0;
+}
+
+.accessory__info__block {
+  display: flex;
+  flex-flow: row;
+
+  margin: 34px 0;
+}
+
+.left__line {
+  margin-top: 10px;
+  width: 40%;
+  max-width: 670px;
+}
+
+.accessory__info {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: $accessory_info_font_color;
+
+  max-width: 890px;
+  margin-left: 31px;
+  margin-right: calc((100% - 1279px) / 2);
+}
+
+.--ex-accessory {
+  border-top: $--ex-accessory 3px solid;
+}
+
+.--esp-accessory {
+  border-top: $--esp-accessory 3px solid;
+}
+
+.--enkm-accessory {
+  border-top: $--enkm-accessory 3px solid;
+}

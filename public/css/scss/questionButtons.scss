@@ -1,0 +1,53 @@
+@import "basicSettings";
+@import "Colors/advantagesAndFooterColors";
+
+.question__buttons__block {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.question__button {
+  display: flex;
+  flex-flow: column;
+  width: 49.2%;
+  border: $question_button_border 2px solid;
+  text-decoration: none;
+  color: black;
+
+  transition: box-shadow 80ms linear;
+}
+
+.question__button__info {
+  .email {
+    text-decoration: underline;
+  }
+}
+
+.question__button:hover {
+  .question__button__info {
+    color: $link_color;
+  }
+
+  .question__button__info {
+    .email {
+      color: $link_color;
+    }
+  }
+}
+
+.question__button:hover {
+  box-shadow: 0 0 30px $question_button_shadow;
+}
+
+.question__button__info {
+  text-align: left;
+  color: black;
+  padding: 30px 5px 30px 100px;
+}
+
+.question__button__title {
+  text-decoration: none;
+  margin-bottom: 10px;
+}

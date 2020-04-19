@@ -1,0 +1,58 @@
+@import "fonts";
+@import "Colors/advantagesAndFooterColors";
+
+footer {
+  background-color: $footer_background_color;
+  margin-top: 38px;
+}
+
+footer {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 20px 10px 50px;
+    justify-content: space-between;
+
+    font-family: $container_font, sans-serif;
+    font-weight: 100;
+    font-size: 0.7em;
+
+
+    color: $footer_font_color;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__text {
+
+  margin: 15px 0;
+}
+
+.footer__link {
+  color: $footer_font_color;
+
+}
+
+.--first {
+  width: 40%;
+}
+
+.--second {
+  width: 20%;
+  padding-top: 10px;
+
+}
+
+.--third {
+  width: 25%;
+  padding-top: 80px;
+  line-height: 1.2;
+}
+
+wh {
+  color: white;
+}

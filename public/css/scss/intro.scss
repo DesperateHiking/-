@@ -1,0 +1,77 @@
+@import "basicSettings";
+@import "fonts";
+@import "Colors/firstSectionColors";
+
+.intro {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 700px;
+
+  background: url($image_dir + "intro_back.png") right top no-repeat;
+}
+
+.intro {
+  .container {
+    display: flex;
+    flex-flow: row;
+  }
+}
+
+.intro__img__container {
+  position: relative;
+  width: 42%;
+}
+
+.intro__img {
+  margin-top: 60px;
+  position: absolute;
+  width: 110%;
+  right: -60px;
+}
+
+.intro__inner {
+  max-width: 658px;
+  padding-left: 60px;
+  text-align: left;
+  box-sizing: unset;
+}
+
+.intro__title {
+  max-width: 550px;
+  font-family: $intro_title_font, sans-serif;
+  font-weight: 700;
+  font-size: 2.1em;
+  line-height: 1.2;
+  padding: 25px 0;
+}
+
+.intro__text {
+  max-width: 658px;
+  font-family: $intro_text_font, sans-serif;
+  font-size: 14pt;
+  line-height: 2;
+  padding-bottom: 25px;
+}
+
+.intro__btn {
+  font-family: $intro_button_font, sans-serif;
+  font-weight: 700;
+  color: black;
+
+  font-size: .85rem;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  height: 48px;
+  padding: 16px 28px;
+  background-color: $yellow_button_color;
+  transition: box-shadow 80ms linear;
+}
+
+.intro__btn:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,37 @@
+@import "basicSettings";
+@import "Colors/enipSectionColors";
+
+.ordering__block {
+  display: flex;
+  flex-flow: column;
+  background-color: $order_background_color;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.ordering__header {
+  margin: 30px auto 0;
+}
+
+.ordering__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 700;
+
+  margin: 30px auto;
+  width: 55%;
+}
+
+.email {
+  font-weight: 700;
+  color: black;
+}
+
+.phone__num {
+  font-weight: 700;
+}
+
+.vertical__line {
+  border-left: black 3px solid;
+}

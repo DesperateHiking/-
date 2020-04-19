@@ -1,0 +1,76 @@
+@import "basicSettings";
+@import "fonts";
+@import "Colors/enipSectionColors";
+
+.settings__header {
+  font-size: 1.6em;
+  font-weight: 300;
+  text-align: center;
+  margin: 120px 0 40px 0;
+}
+
+.settings__block {
+  display: flex;
+  width: 100%;
+}
+
+.settings {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.setting {
+  background-color: white;
+  display: flex;
+  width: 415px;
+  min-height: 280px;
+  margin: 10px 0;
+
+  border: $setting_border_color 1px solid;
+
+  transition: box-shadow 80ms linear;
+}
+
+.setting:hover {
+  .setting__top {
+    color: $link_color;
+  }
+}
+
+.setting:hover {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.5);
+}
+
+.setting__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.8em;
+  line-height: 1.8;
+
+  padding: 20px 30px 25px;
+}
+
+.setting__top {
+  font-size: 1em;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+
+
+  transition: color 80ms linear;
+}
+
+.setting__bottom {
+  margin: 0;
+}
+
+.setting__price {
+  color: black;
+  font-family: $setting_price_font, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0;
+}
